@@ -1,9 +1,6 @@
 name: Run evals
 
-on:
-  push:
-    # files:
-    #   - 'test-eval/**'
+on: pull_request
 
 permissions:
   pull-requests: write

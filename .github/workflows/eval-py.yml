@@ -1,9 +1,6 @@
 name: Run Python evals
 
-on:
-  push:
-    # files:
-    #   - 'test-eval/**'
+on: pull_request
 
 permissions:
   pull-requests: write
@@ -38,7 +35,6 @@ jobs:
           api_key: ${{ secrets.BRAINTRUST_API_KEY }}
           root: test-eval-py
           runtime: python # Assuming the action supports a 'python' runtime
-
 
       # - name: Start terminal session
       #   uses: mxschmitt/action-tmate@v3

@@ -2,6 +2,8 @@ from braintrust import Eval
 
 from autoevals import Levenshtein
 
+raise Exception("TESTING COMPILE FAILURE")
+
 Eval(
     "Say Hi Bot Python",  # Replace with your project name
     data=lambda: [
