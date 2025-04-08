@@ -1,5 +1,7 @@
 import { traced, Eval } from "braintrust";
 
+throw new Error("TESTING COMPILE FAILURE");
+
 async function callModel(input) {
   return traced(
     async span => {
