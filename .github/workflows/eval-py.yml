@@ -35,7 +35,6 @@ jobs:
           api_key: ${{ secrets.BRAINTRUST_API_KEY }}
           root: test-eval-py
           runtime: python # Assuming the action supports a 'python' runtime
-          terminate_on_failure: true
 
       # - name: Start terminal session
       #   uses: mxschmitt/action-tmate@v3
